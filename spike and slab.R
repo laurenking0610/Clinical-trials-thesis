@@ -1,0 +1,5 @@
+x=seq(-4,4,length=200)
+plot(x,0.6*dnorm(x),type="l",ylim=c(0,0.35),xlab="Effect size", ylab="Density")
+polygon(c(x,rev(x)),c(0.6*dnorm(x),0*x),col="lightblue")
+lines(c(0,0), c(0,0.3))
+points(0,0.3,pch=16, col='red')
